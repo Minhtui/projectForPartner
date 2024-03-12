@@ -35,5 +35,42 @@
     <div id="truffle">Chocolate Truffle</div>
     <div id="truffle_2">Chocolate Truffle</div>
   </div>
+  <script>
+      $(document).ready(function () {
+        $("#top-right").on("mouseenter", function () {
+          $("#white").show();
+        });
+        $("#top-right").on("mouseout", function () {
+          $("#white").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#bottom-left").on("mouseenter", function () {
+          $("#milk").show();
+        });
+        $("#bottom-left").on("mouseout", function () {
+          $("#milk").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#bottom-right").on("mouseenter", function () {
+          $("#truffle").show();
+        });
+        $("#bottom-right").on("mouseout", function () {
+          $("#truffle").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#top-left").on("mouseenter", function () {
+          $("#truffle_2").show();
+        });
+        $("#top-left").on("mouseout", function () {
+          $("#truffle_2").hide();
+        });
+      });
+  </script>
 </body>
 </html>
