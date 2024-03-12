@@ -1,0 +1,1 @@
+console.log("project for partner");
