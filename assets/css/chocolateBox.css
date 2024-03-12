@@ -143,6 +143,20 @@ body {
   animation: heart 1.7s ease-out infinite;
 }
 
+@keyframes chocolate-box {
+  from {
+    transform: translateX(-700px);
+  }
+
+  to {
+    transform: translateX(0) ;
+  }
+}
+
+.chocolate-box {
+  animation: chocolate-box 2s ease-in;
+}
+
 .chocolate-box {
   position: relative;
   height: 300px;
