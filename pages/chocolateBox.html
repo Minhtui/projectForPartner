@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/chocolateBox.css">
-  <script type="text/javascript" src="../assets/js/chocolateBox.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <title>Valentine’s Day Chocolate Box</title>
 </head>
 <body>
-  <!-- <marquee behavior="" direction="">hi</marquee> -->
   <div class="hearts">
     <div class="one"></div>
     <div class="two"></div>
@@ -22,11 +20,10 @@
     <div class="nine"></div>
     <div class="ten"></div>
   </div>
-  <!-- <marquee behavior="" direction="">i love you three thounsand</marquee> -->
   <div class="chocolate-box">
     <div class="chocs">
-      <div id="top-left" class="top-left" onclick="home()"></div>
-      <div id="bottom-right" class="bottom-right"></div>
+      <div id="top-left" class="top-left" onclick="scrapbook()"></div>
+      <div id="bottom-right" class="bottom-right" onclick="quiz()"></div>
       <div id="bottom-left" class="bottom-left"></div>
       <div id="top-right" class="top-right"></div>
     </div>  
@@ -37,53 +34,7 @@
     <div id="truffle">Chocolate Truffle</div>
     <div id="truffle_2">Chocolate Truffle</div>
   </div>
-  <script>
-    document.body.style.zoom="150%"
 
-    // test
-    function home() {
-      document.location.href = "flipbook/docs/index.html";
-    }
-
-    // document.getElementById("#top-left").onclick = function() { 
-    //   document.location.replace = "/test/page_2.html";
-    // }
-
-      $(document).ready(function () {
-        $("#top-right").on("mouseenter", function () {
-          $("#white").show();
-        });
-        $("#top-right").on("mouseout", function () {
-          $("#white").hide();
-        });
-      });
-
-      $(document).ready(function () {
-        $("#bottom-left").on("mouseenter", function () {
-          $("#milk").show();
-        });
-        $("#bottom-left").on("mouseout", function () {
-          $("#milk").hide();
-        });
-      });
-
-      $(document).ready(function () {
-        $("#bottom-right").on("mouseenter", function () {
-          $("#truffle").show();
-        });
-        $("#bottom-right").on("mouseout", function () {
-          $("#truffle").hide();
-        });
-      });
-
-      $(document).ready(function () {
-        $("#top-left").on("mouseenter", function () {
-          $("#truffle_2").show();
-        });
-        $("#top-left").on("mouseout", function () {
-          $("#truffle_2").hide();
-        });
-      });
-  </script>
+  <script src="/assets/js/chocolateBox.js"></script>
 </body>
 </html>
