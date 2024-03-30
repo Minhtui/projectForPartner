@@ -21,7 +21,10 @@
     <title>Memories</title>
   </head>
   <body>
+
+
     <div class="hearts">
+      <button id="back-button">Quay lại</button>
       <div class="one"></div>
       <div class="two"></div>
       <div class="three"></div>
@@ -33,8 +36,6 @@
       <div class="nine"></div>
       <div class="ten"></div>
     </div>
-
-    <button id="back-button">Quay lại</button>
 
     <div id="canvas">
       <div id="book-zoom">
@@ -54,10 +55,7 @@
     <script type="text/javascript">
       document.body.style.zoom = "95%";
 
-      let btnBack = document.querySelector('button');
-      btnBack.addEventListener('click', function () {
-      	window.history.back();
-      })
+      let btnBack = document.getElementById('back-button');
 
       function loadApp() {
         var flipbook = $(".sample-docs");
