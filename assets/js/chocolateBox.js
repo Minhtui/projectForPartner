@@ -1,6 +1,6 @@
 document.body.style.zoom = "150%";
 
-// test
+// test 1
 function scrapbook() {
   document.location.href = "scrapbook.html";
 }
