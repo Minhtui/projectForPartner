@@ -10,7 +10,7 @@ function loadPage(page) {
 		container.find('.loader').remove();
 	});
 
-	img.attr('src', 'files/pages/' +  (page-2) + '.png');
+	img.attr('src', 'flipbook/docs/files/pages/' +  (page-2) + '.png');
 
 }
 
