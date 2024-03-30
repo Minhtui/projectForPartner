@@ -213,7 +213,7 @@ body {
 }
 
 #next-btn {
-  background: #F295A8;
+  background: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: 2px solid rgba(255, 255, 255);
   color: #fff;
   font-weight: 500;
