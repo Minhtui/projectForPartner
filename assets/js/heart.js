@@ -1,4 +1,4 @@
-// test
+// test-1
 // Lấy phần tử chứa animation
 var heartMain = document.querySelector(".icon");
 
