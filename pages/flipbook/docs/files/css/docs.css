@@ -4,7 +4,9 @@ body{
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	background-color: #f5b8b5;
+	/* background-color: #f5b8b5; */
+	/* background: url(/assets/images/background_25.jpg); */
+	background-image: linear-gradient(to top right, #885cf6, #ec4899);
 }
 
 /* custom button */

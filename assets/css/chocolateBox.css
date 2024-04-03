@@ -3,9 +3,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 75vh;
-  background-color: #f5b8b5;
+  background-image: linear-gradient(to top right, #885cf6, #ec4899);
+  /* background-color: #f5b8b5; */
+  /* background: url(/assets/images/background_25.jpg); */
+  background-size: cover;
   overflow: hidden;
 }
+
+/* animation heart */
 
 .heart {
   background-color: #d62828;
@@ -142,6 +147,8 @@ body {
   left: 100px;
   animation: heart 1.7s ease-out infinite;
 }
+
+/* end animation heart */
 
 @keyframes chocolate-box {
   from {

@@ -146,9 +146,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: url('/assets/images/img_quiz/background_3.jpg'); */
-  background: #f5b8b5;
+  /* background: url('/assets/images/background_25.jpg'); */
+  background-image: linear-gradient(to top right, #885cf6, #ec4899);
+  /* background: #f5b8b5; */
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
 }
@@ -204,7 +206,8 @@ body {
 }
 
 .btn:hover:not([disabled]) {
-  background: #222;
+  /* background: #222; */
+  background: linear-gradient(135deg, #f34079 40%, #fc894d);
   color: #fff;
 }
 
