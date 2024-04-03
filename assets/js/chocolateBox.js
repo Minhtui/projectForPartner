@@ -9,6 +9,10 @@ function quiz() {
   document.location.href = "quiz.html";
 }
 
+function slideLove() {
+  document.location.href = "slideLove.html";
+}
+
 $(document).ready(function () {
   $("#top-right").on("mouseenter", function () {
     $("#white").show();
