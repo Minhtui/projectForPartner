@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/submitFormToEmail.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "orFC7jEBwL_AmURIJ",
+      });
+    })();
+  </script>
+  <title>Send Love</title>
+</head>
+
+<body>
+  <div class="notifications"></div>
+  <!-- multi step form -->
+  <form id="msform">
+    <fieldset id="fieldset_1">
+      <h2 class="fs-title">Giới thiệu về bản thân</h2>
+      <div class="user-detail">
+        <!-- last-name -->
+        <div class="input-box">
+          <span class="detail">Họ</span>
+          <input id="last_name" type="text" placeholder="..." required>
+        </div>
+        <!-- first-name -->
+        <div class="input-box">
+          <span class="detail">Tên</span>
+          <input id="first_name" type="text" placeholder="..." required>
+        </div>
+        <!-- email -->
+        <div class="input-box">
+          <span class="detail">Email</span>
+          <input id="email_id" type="email" placeholder="Email" required>
+        </div>
+        <!-- telephone -->
+        <div class="input-box">
+          <span class="detail">Số điện thoại</span>
+          <input id="phone_id" type="tel" placeholder="Số điện thoại" required>
+        </div>
+        <!-- date-of-birth -->
+        <div class="flex-input">
+          <span class="detail">Ngày sinh</span>
+          <div class="grouping">
+            <input id="day_id" type="text" pattern="[0-9,\.]*" name="day" value="" min="0" max="31" placeholder="DD"
+               required>
+            <input id="month_id" type="text" pattern="[0-9,\.]*" name="month" value="" min="0" max="12" placeholder="MM"
+               required>
+            <input id="year_id" type="text" pattern="[0-9,\.]*" name="year" value="" min="0" max="2050"
+              placeholder="YYYY"  required>
+          </div>
+        </div>
+        <!-- gender -->
+        <div class="flex-input">
+          <input value="trai" type="radio" name="gender" id="dot-1" checked>
+          <input value="gái" type="radio" name="gender" id="dot-2">
+          <input value="nào đó" type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Giới tính</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Nam</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Nữ</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Khác</span>
+            </label>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="flex-input">
+          <div class="wrapper">
+            <span class="detail">Giới thiệu về bản thân: </span>
+            <textarea id="des_yourself" placeholder="..." required></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- button -->
+      <input id="next_btn" type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <!-- fieldset -->
+    <fieldset id="fieldset_2">
+      <h2 class="fs-title">Mạng xã hội</h2>
+      <div class="user-detail">
+        <!-- Facebook -->
+        <div class="input-box">
+          <span class="detail">Facebook</span>
+          <input id="face_id" type="text" placeholder="Facebook" required />
+        </div>
+        <!-- Instagram -->
+        <div class="input-box">
+          <span class="detail">Instagram</span>
+          <input id="insta_id" type="text" placeholder="Instagram" required />
+        </div>
+        <!-- select nickname favorite -->
+        <div class="flex-input">
+          <span class="detail">Chọn một tên riêng bạn thích nhất:</span>
+          <div class="select-menu">
+            <div class="select-btn" id="select-btn">
+              <span id="text">Select Nickname Favorite</span>
+              <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+            </div>
+            <ul class="list">
+              <li class="option">
+                <span class="option-text" style="--i:6;">Nguyễn Thanh Trúc</span>
+              </li>
+              <li class="option">
+                <span class="option-text" style="--i:5;">Thanh Trúc</span>
+              </li>
+              <li class="option">
+                <span class="option-text" style="--i:4;">Trúc Nguyễn</span>
+              </li>
+              <li class="option">
+                <span class="option-text" style="--i:3;">Trúc</span>
+              </li>
+              <li class="option">
+                <span class="option-text" style="--i:2;">Ngusi</span>
+              </li>
+              <li class="option">
+                <span class="option-text" style="--i:1;">Bé Trúc</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Description personality-->
+        <div class="flex-input">
+          <div class="wrapper">
+            <span class="detail">Giới thiệu về tính cách: </span>
+            <textarea id="des_fav" placeholder="Sở thích và sở ghét ..." required></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- button -->
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <!-- fieldset -->
+    <fieldset>
+      <h2 class="fs-title">Lời nhắn</h2>
+      <!-- send mess-->
+      <div class="flex-input">
+        <div class="wrapper">
+          <span class="detail">Tên của người bạn muốn gửi:</span>
+          <input id="lover_name" type="text" placeholder="..." required>
+          <span class="detail">Nhân ngày kỷ niệm, hãy nhắn gửi đến người ấy: </span>
+          <textarea id="mess_id" placeholder="..." required></textarea>
+        </div>
+      </div>
+      <!-- button -->
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input onclick="sendMail()" type="submit" name="submit" class="submit action-button" value="Submit" id="info" />
+    </fieldset>
+  </form>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="/assets/js/submitFormToEmail.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

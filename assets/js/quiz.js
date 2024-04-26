@@ -11,35 +11,125 @@ const questions = [
   },
   // 2
   {
-    question: "Món ăn chúng ta ăn cùng với nhau nhiều nhất ?",
+    question: "Món ăn chúng ta ăn nhiều nhất ?",
     answers: [
-      { text: "Chicken", correct: false },
-      { text: "Noodle Spicy", correct: true },
-      { text: "Pho", correct: false },
-      { text: "HotPot", correct: false }
+      { text: "Gà rán", correct: false },
+      { text: "Mỳ cay", correct: true },
+      { text: "Phở", correct: false },
+      { text: "Lẩu - Nướng", correct: false }
     ]
   },
   // 3
   {
     question: "Môn thể thao chúng ta hay chơi với nhau ?",
     answers: [
-      { text: "Basketball", correct: false },
-      { text: "Football", correct: false },
-      { text: "Tennis", correct: false },
-      { text: "Badminton", correct: true }
+      { text: "Bóng rổ", correct: false },
+      { text: "Bóng đá", correct: false },
+      { text: "Quần vợt", correct: false },
+      { text: "Cầu lông", correct: true }
     ]
   },
   // 4
   {
-    question: "Vật nuôi mà chúng ta (me or you) yêu thích ?",
+    question: "Bài hát đầu tiên bé Như hát cho bé Trúc nghe ?",
     answers: [
-      { text: "Dog", correct: false },
-      { text: "Cat", correct: true },
-      { text: "Hamster", correct: false },
-      { text: "Rabbit", correct: false }
+      { text: "Từ ngày em đến", correct: false },
+      { text: "Một đêm say", correct: true },
+      { text: "Một nhà", correct: false },
+      { text: "Đi theo bóng mặt trời", correct: false }
     ]
   },
   // 5
+  {
+    question: "Lần đầu tiên đi ăn chung với nhau món gì ?",
+    answers: [
+      { text: "Bánh tráng trứng", correct: false },
+      { text: "Bánh tráng trộn", correct: false },
+      { text: "Mỳ cay", correct: true },
+      { text: "Phở", correct: false }
+    ]
+  },
+  // 6
+  {
+    question: "Ai là người làm biếng nhất ?",
+    answers: [
+      { text: "Bé Trúc", correct: false },
+      { text: "Bé Như", correct: false },
+      { text: "Cả hai bé", correct: true },
+      { text: "Nothing ...", correct: false }
+    ]
+  },
+  // 7
+  {
+    question: "Ai là người hướng nội nhất ?",
+    answers: [
+      { text: "Bé Trúc", correct: false },
+      { text: "Bé Như", correct: false },
+      { text: "Cả hai bé", correct: true },
+      { text: "Nothing ...", correct: false }
+    ]
+  },
+  // 8
+  {
+    question: "Ai là người lì nhất ?",
+    answers: [
+      { text: "Bé Trúc", correct: false },
+      { text: "Bé Như", correct: true },
+      { text: "Cả hai bé", correct: false },
+      { text: "Nothing ...", correct: false }
+    ]
+  },
+  // 9
+  {
+    question: "Ai là người dễ thương nhất ?",
+    answers: [
+      { text: "Bé Trúc", correct: false },
+      { text: "Bé Như", correct: false },
+      { text: "Cả hai bé", correct: true },
+      { text: "Nothing ...", correct: false }
+    ]
+  },
+  // 10
+  {
+    question: "Ai là người lãng mạn hơn ?",
+    answers: [
+      { text: "Bé Trúc", correct: false },
+      { text: "Bé Như", correct: false },
+      { text: "Cả hai bé", correct: true },
+      { text: "Nothing ...", correct: false }
+    ]
+  },
+  // 11
+  {
+    question: "Ai là người hay nóng tính nhất ?",
+    answers: [
+      { text: "Bé Trúc", correct: false },
+      { text: "Bé Như", correct: true },
+      { text: "Cả hai bé", correct: false },
+      { text: "Nothing ...", correct: false }
+    ]
+  },
+  // 12
+  {
+    question: "Ai là người có tình cảm trước ?",
+    answers: [
+      { text: "Bé Trúc", correct: false },
+      { text: "Bé Như", correct: true },
+      { text: "Cả hai bé", correct: false },
+      { text: "Nothing ...", correct: false }
+    ]
+  },
+  // 13
+  {
+    question: "01.07.2019 - là ngày gì ?",
+    answers: [
+      { text: "First Kiss", correct: true },
+      { text: "Lần đầu tiên nắm tay", correct: false },
+      { text: "Lần đầu tiên xem phim", correct: false },
+      { text: "Tỏ tình", correct: false }
+    ]
+  },
+  // 14
   {
     question: "Ngày nào là ngày tỏ tình ?",
     answers: [
@@ -47,96 +137,6 @@ const questions = [
       { text: "01.07.2019", correct: false },
       { text: "01.06.2019", correct: false },
       { text: "01.05.2019", correct: true }
-    ]
-  },
-  // 6
-  {
-    question: "01.07.2019 - là ngày gì ?",
-    answers: [
-      { text: "First Kiss", correct: true },
-      { text: "Holding Hands For The First", correct: false },
-      { text: "Watch A Movie", correct: false },
-      { text: "Confess Your Love - Tỏ tình", correct: false }
-    ]
-  },
-  // 7
-  {
-    question: "Ai là người nấu ăn ngon hơn ?",
-    answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: false },
-      { text: "Lúc này, lúc kia", correct: true },
-      { text: "Nấu dở đều như nhau", correct: false }
-    ]
-  },
-  // 8
-  {
-    question: "Ai là người có tình cảm trước ?",
-    answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: true },
-      { text: "Người này người kia đều có", correct: false },
-      { text: "Không một ai hết", correct: false }
-    ]
-  },
-  // 9
-  {
-    question: "Ai là người lãng mạn hơn ?",
-    answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: false },
-      { text: "Lúc người này, lúc người kia", correct: true },
-      { text: "Không một ai, ai cũng lãng xẹt", correct: false }
-    ]
-  },
-  // 10
-  {
-    question: "Ai là người hay nóng tính nhất ?",
-    answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: true },
-      { text: "Lúc bé này, lúc bé kia", correct: false },
-      { text: "Không!!! Đứa nào cũng hiền từ, nết na, đoan trang", correct: false }
-    ]
-  },
-  // 11
-  {
-    question: "Ai là người sẽ mất tích vì ngủ quên ?",
-    answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: false },
-      { text: "Chắc chắn là cả hai", correct: true },
-      { text: "Không có đáp án nào", correct: false }
-    ]
-  },
-  // 12
-  {
-    question: "Ai là người hay muộn nhất ?",
-    answers: [
-      { text: "Bé Trúc", correct: true },
-      { text: "Bé Như", correct: false },
-      { text: "Cả 2", correct: false },
-      { text: "Không có đáp án nào", correct: false }
-    ]
-  }, 
-  // 13
-  {
-    question: "Ai là người hài hước ?",
-    answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: false },
-      { text: "Lúc đứa này, lúc đứa kia", correct: true },
-      { text: "Không!!! Đứa nào cũng nhạt như nước lã", correct: false }
-    ]
-  },
-  // 14
-  {
-    question: "Ai là người có gu thời trang hơn ?",
-    answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: false },
-      { text: "Cả 2 nha, đứa nào cũng fashion", correct: false },
-      { text: "Chuyện buồn, vì cả hai đều mặc xấu", correct: true }
     ]
   },
   // 15

@@ -13,6 +13,10 @@ function slideLove() {
   document.location.href = "slideLove.html";
 }
 
+function sendLove() {
+  document.location.href = "submitFormToEmail.html";
+}
+
 $(document).ready(function () {
   $("#top-right").on("mouseenter", function () {
     $("#white").show();

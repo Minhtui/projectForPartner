@@ -4,10 +4,40 @@ body {
   justify-content: center;
   height: 75vh;
   background-image: linear-gradient(to top right, #885cf6, #ec4899);
-  /* background-color: #f5b8b5; */
-  /* background: url(/assets/images/background_25.jpg); */
   background-size: cover;
   overflow: hidden;
+}
+
+/*  */
+
+.container {
+  display: inline-block;
+}
+
+.text {
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(18), cursor .4s step-end infinite alternate;
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
 /* animation heart */

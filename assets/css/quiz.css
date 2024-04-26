@@ -146,9 +146,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: url('/assets/images/background_25.jpg'); */
   background-image: linear-gradient(to top right, #885cf6, #ec4899);
-  /* background: #f5b8b5; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
