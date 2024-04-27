@@ -1,7 +1,7 @@
 const questions = [
   // 1
   {
-    question: "Bộ phim chiếu rạp chúng ta đã coi cùng nhau ?",
+    question: "Bộ phim chiếu rạp đầu tiên coi cùng nhau ?",
     answers: [
       { text: "Bad Genius", correct: true },
       { text: "The Greatest Showman", correct: false },
@@ -11,7 +11,7 @@ const questions = [
   },
   // 2
   {
-    question: "Món ăn chúng ta ăn nhiều nhất ?",
+    question: "Món ăn được ăn nhiều nhất ?",
     answers: [
       { text: "Gà rán", correct: false },
       { text: "Mỳ cay", correct: true },
@@ -21,7 +21,7 @@ const questions = [
   },
   // 3
   {
-    question: "Môn thể thao chúng ta hay chơi với nhau ?",
+    question: "Môn thể thao thường chơi ?",
     answers: [
       { text: "Bóng rổ", correct: false },
       { text: "Bóng đá", correct: false },
@@ -44,18 +44,18 @@ const questions = [
     question: "Lần đầu tiên đi ăn chung với nhau món gì ?",
     answers: [
       { text: "Bánh tráng trứng", correct: false },
-      { text: "Bánh tráng trộn", correct: false },
       { text: "Mỳ cay", correct: true },
+      { text: "Bánh tráng trộn", correct: false },
       { text: "Phở", correct: false }
     ]
   },
   // 6
   {
-    question: "Ai là người làm biếng nhất ?",
+    question: "Ai là người hay thất hẹn nào ?",
     answers: [
-      { text: "Bé Trúc", correct: false },
+      { text: "Bé Trúc", correct: true },
       { text: "Bé Như", correct: false },
-      { text: "Cả hai bé", correct: true },
+      { text: "Cả hai bé", correct: false },
       { text: "Nothing ...", correct: false }
     ]
   },
@@ -71,10 +71,10 @@ const questions = [
   },
   // 8
   {
-    question: "Ai là người lì nhất ?",
+    question: "Ai là người thường trễ nhất ?",
     answers: [
-      { text: "Bé Trúc", correct: false },
-      { text: "Bé Như", correct: true },
+      { text: "Bé Trúc", correct: true },
+      { text: "Bé Như", correct: false },
       { text: "Cả hai bé", correct: false },
       { text: "Nothing ...", correct: false }
     ]
