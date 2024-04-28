@@ -1,17 +1,17 @@
 document.body.style.zoom = "150%";
 
 function scrapbook() {
-  localStorage.setItem('scrapbookVisited', 'true');
+  localStorage.setItem("scrapbookVisited", "true");
   document.location.href = "scrapbook.html";
 }
 
 function quiz() {
-  localStorage.setItem('quizVisited', 'true');
+  localStorage.setItem("quizVisited", "true");
   document.location.href = "quiz.html";
 }
 
 function slideLove() {
-  localStorage.setItem('slideLoveVisited', 'true');
+  localStorage.setItem("slideLoveVisited", "true");
   document.location.href = "slideLove.html";
 }
 
@@ -55,23 +55,25 @@ $(document).ready(function () {
   });
 });
 
-window.onload = function() {
-  if (localStorage.getItem('slideLoveVisited') === 'true') {
-    document.getElementById('top-left').style.display = 'none';
+window.onload = function () {
+  if (localStorage.getItem("slideLoveVisited") === "true") {
+    document.getElementById("top-left").style.display = "none";
   }
-  if (localStorage.getItem('scrapbookVisited') === 'true') {
-    document.getElementById('bottom-left').style.display = 'none';
+  if (localStorage.getItem("scrapbookVisited") === "true") {
+    document.getElementById("bottom-left").style.display = "none";
   }
-  if (localStorage.getItem('quizVisited') === 'true') {
-    document.getElementById('top-right').style.display = 'none';
+  if (localStorage.getItem("quizVisited") === "true") {
+    document.getElementById("top-right").style.display = "none";
   }
-}
+};
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  if (!document.referrer || new URL(document.referrer).origin !== window.location.origin) {
-      localStorage.removeItem('slideLoveVisited');
-      localStorage.removeItem('scrapbookVisited');
-      localStorage.removeItem('quizVisited');
+window.addEventListener("DOMContentLoaded", (event) => {
+  if (
+    !document.referrer ||
+    new URL(document.referrer).origin !== window.location.origin
+  ) {
+    localStorage.removeItem("slideLoveVisited");
+    localStorage.removeItem("scrapbookVisited");
+    localStorage.removeItem("quizVisited");
   }
 });
-

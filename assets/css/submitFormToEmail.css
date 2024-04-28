@@ -1,6 +1,4 @@
-/*custom font*/
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*basic reset*/
 * {
@@ -52,7 +50,6 @@ body {
 }
 
 .user-detail .input-box {
-  /* margin-bottom: 15px; */
   width: calc(100% / 2 - 20px);
 }
 
@@ -106,7 +103,6 @@ span.detail {
   border-radius: 5px;
   cursor: pointer;
   padding: 10px 5px;
-  /* margin: 10px 5px; */
   background: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: 2px solid rgba(255, 255, 255);
   width: 100px;
@@ -117,7 +113,6 @@ span.detail {
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
   margin-inline: auto;
-  /* display: grid; */
   place-items: center;
   margin-left: 45px;
   margin-right: 45px;
@@ -286,8 +281,7 @@ textarea::-webkit-scrollbar {
 }
 
 .select-menu {
-  width: 380px;
-  /* margin: 150px auto; */
+  width: 380px; 
 }
 
 .select-menu .select-btn {
@@ -404,7 +398,8 @@ button {
   font-weight: bold;
 }
 
-.toast span, .toast i:nth-child(3) {
+.toast span,
+.toast i:nth-child(3) {
   color: #fff;
   opacity: 0.6;
 }
@@ -413,12 +408,15 @@ button {
   0% {
     transform: translateX(100%);
   }
+
   40% {
     transform: translateX(-5%);
   }
+
   80% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-10%);
   }

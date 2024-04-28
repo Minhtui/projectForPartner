@@ -1,157 +1,141 @@
 const questions = [
-  // 1
   {
     question: "Bộ phim chiếu rạp đầu tiên coi cùng nhau ?",
     answers: [
       { text: "Bad Genius", correct: true },
       { text: "The Greatest Showman", correct: false },
       { text: "Avengers: Endgame", correct: false },
-      { text: "The New King Of Comedy", correct: false }
-    ]
+      { text: "The New King Of Comedy", correct: false },
+    ],
   },
-  // 2
   {
     question: "Món ăn được ăn nhiều nhất ?",
     answers: [
       { text: "Gà rán", correct: false },
       { text: "Mỳ cay", correct: true },
       { text: "Phở", correct: false },
-      { text: "Lẩu - Nướng", correct: false }
-    ]
+      { text: "Lẩu - Nướng", correct: false },
+    ],
   },
-  // 3
   {
     question: "Môn thể thao thường chơi ?",
     answers: [
       { text: "Bóng rổ", correct: false },
       { text: "Bóng đá", correct: false },
       { text: "Quần vợt", correct: false },
-      { text: "Cầu lông", correct: true }
-    ]
+      { text: "Cầu lông", correct: true },
+    ],
   },
-  // 4
   {
     question: "Bài hát đầu tiên bé Như hát cho bé Trúc nghe ?",
     answers: [
       { text: "Từ ngày em đến", correct: false },
       { text: "Một đêm say", correct: true },
       { text: "Một nhà", correct: false },
-      { text: "Đi theo bóng mặt trời", correct: false }
-    ]
+      { text: "Đi theo bóng mặt trời", correct: false },
+    ],
   },
-  // 5
   {
     question: "Lần đầu tiên đi ăn chung với nhau món gì ?",
     answers: [
       { text: "Bánh tráng trứng", correct: false },
       { text: "Mỳ cay", correct: true },
       { text: "Bánh tráng trộn", correct: false },
-      { text: "Phở", correct: false }
-    ]
+      { text: "Phở", correct: false },
+    ],
   },
-  // 6
   {
     question: "Ai là người hay thất hẹn nào ?",
     answers: [
       { text: "Bé Trúc", correct: true },
       { text: "Bé Như", correct: false },
       { text: "Cả hai bé", correct: false },
-      { text: "Nothing ...", correct: false }
-    ]
+      { text: "Nothing ...", correct: false },
+    ],
   },
-  // 7
   {
     question: "Ai là người hướng nội nhất ?",
     answers: [
       { text: "Bé Trúc", correct: false },
       { text: "Bé Như", correct: false },
       { text: "Cả hai bé", correct: true },
-      { text: "Nothing ...", correct: false }
-    ]
+      { text: "Nothing ...", correct: false },
+    ],
   },
-  // 8
   {
     question: "Ai là người thường trễ nhất ?",
     answers: [
       { text: "Bé Trúc", correct: true },
       { text: "Bé Như", correct: false },
       { text: "Cả hai bé", correct: false },
-      { text: "Nothing ...", correct: false }
-    ]
+      { text: "Nothing ...", correct: false },
+    ],
   },
-  // 9
   {
     question: "Ai là người dễ thương nhất ?",
     answers: [
       { text: "Bé Trúc", correct: false },
       { text: "Bé Như", correct: false },
       { text: "Cả hai bé", correct: true },
-      { text: "Nothing ...", correct: false }
-    ]
+      { text: "Nothing ...", correct: false },
+    ],
   },
-  // 10
   {
     question: "Ai là người lãng mạn hơn ?",
     answers: [
       { text: "Bé Trúc", correct: false },
       { text: "Bé Như", correct: false },
       { text: "Cả hai bé", correct: true },
-      { text: "Nothing ...", correct: false }
-    ]
+      { text: "Nothing ...", correct: false },
+    ],
   },
-  // 11
   {
     question: "Ai là người hay nóng tính nhất ?",
     answers: [
       { text: "Bé Trúc", correct: false },
       { text: "Bé Như", correct: true },
       { text: "Cả hai bé", correct: false },
-      { text: "Nothing ...", correct: false }
-    ]
+      { text: "Nothing ...", correct: false },
+    ],
   },
-  // 12
   {
     question: "Ai là người có tình cảm trước ?",
     answers: [
       { text: "Bé Trúc", correct: false },
       { text: "Bé Như", correct: true },
       { text: "Cả hai bé", correct: false },
-      { text: "Nothing ...", correct: false }
-    ]
+      { text: "Nothing ...", correct: false },
+    ],
   },
-  // 13
   {
     question: "01.07.2019 - là ngày gì ?",
     answers: [
       { text: "First Kiss", correct: true },
       { text: "Lần đầu tiên nắm tay", correct: false },
       { text: "Lần đầu tiên xem phim", correct: false },
-      { text: "Tỏ tình", correct: false }
-    ]
+      { text: "Tỏ tình", correct: false },
+    ],
   },
-  // 14
   {
     question: "Ngày nào là ngày tỏ tình ?",
     answers: [
       { text: "01.10.2019", correct: false },
       { text: "01.07.2019", correct: false },
       { text: "01.06.2019", correct: false },
-      { text: "01.05.2019", correct: true }
-    ]
+      { text: "01.05.2019", correct: true },
+    ],
   },
-  // 15
   {
     question: "Chúng ta đã bên nhau bao lâu ?",
     answers: [
       { text: "6 năm", correct: true },
       { text: "5 năm", correct: false },
       { text: "4 năm", correct: false },
-      { text: "3 năm", correct: false }
-    ]
-  }
+      { text: "3 năm", correct: false },
+    ],
+  },
 ];
 
-// Lấy các phần tử DOM cần thiết
 const questionElements = document.getElementById("question");
 const answersButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -237,7 +221,6 @@ function selectAnswer(e) {
 function showScore() {
   resetState();
   questionElements.innerHTML = `Bạn đạt được ${score}/${questions.length} số câu hỏi về độ hiểu nhau! `;
-  // nextButton.innerHTML = "Thất vọng";
   nextButton.style.display = "block";
 }
 
@@ -256,13 +239,13 @@ function showImgWin() {
 // Hàm tạo đối tượng âm thanh
 function createSound(src) {
   return new Howl({
-    src: [src] // Thay 'path/to/sound.mp3' bằng đường dẫn đến tệp âm thanh của bạn
+    src: [src],
   });
 }
 
 // Tạo các đối tượng âm thanh
-var correctSound = createSound("/assets/sound/correct_2.mp3");
-var applauseSound = createSound("/assets/sound/confetti_2.mp3");
+var correctSound = createSound("/assets/sound/correct.mp3");
+var applauseSound = createSound("/assets/sound/confetti.mp3");
 var incorrectSound = createSound("/assets/sound/incorrect.mp3");
 
 // Hàm hiệu ứng pháo hoa khi chiến thắng
@@ -349,4 +332,3 @@ nextButton.addEventListener("click", () => {
 
 // Bắt đầu trò chơi khi tải trang
 startQuiz();
-

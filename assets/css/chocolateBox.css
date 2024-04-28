@@ -2,13 +2,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 98vh;
   background-image: linear-gradient(to top right, #885cf6, #ec4899);
   background-size: cover;
   overflow: hidden;
 }
-
-/*  */
 
 .container {
   display: inline-block;
@@ -41,7 +39,6 @@ body {
 }
 
 /* animation heart */
-
 .heart {
   background-color: #d62828;
   display: inline-block;
@@ -54,7 +51,8 @@ body {
   width: 30px;
 }
 
-.heart:before, .heart:after {
+.heart:before,
+.heart:after {
   content: "";
   background-color: #d62828;
   border-radius: 50%;
@@ -83,13 +81,23 @@ body {
     transform: translateY(0) rotate(-60deg) scale(0.8);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-700px) rotate(-60deg) scale(1.8);
     opacity: 0.5;
   }
 }
 
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten {
   background-color: red;
   display: inline-block;
   height: 10px;
@@ -100,30 +108,58 @@ body {
   top: 50px;
 }
 
-.one:before, .one:after, 
-.two:before, .two:after, 
-.three:before, .three:after, 
-.four:before, .four:after, 
-.five:before, .five:after, 
-.six:before, .six:after, 
-.seven:before, .seven:after, 
-.eight:before, .eight:after, 
-.nine:before, .nine:after, 
-.ten:before, .ten:after {
+.one:before,
+.one:after,
+.two:before,
+.two:after,
+.three:before,
+.three:after,
+.four:before,
+.four:after,
+.five:before,
+.five:after,
+.six:before,
+.six:after,
+.seven:before,
+.seven:after,
+.eight:before,
+.eight:after,
+.nine:before,
+.nine:after,
+.ten:before,
+.ten:after {
   content: "";
   background-color: red;
   border-radius: 50%;
   width: 10px;
   height: 10px;
   position: absolute;
-} 
+}
 
-.one:before, .two:before, .three:before, .four:before, .five:before, .six:before, .seven:before, .eight:before, .nine:before, .ten:before {
+.one:before,
+.two:before,
+.three:before,
+.four:before,
+.five:before,
+.six:before,
+.seven:before,
+.eight:before,
+.nine:before,
+.ten:before {
   top: -5px;
   left: 0;
 }
 
-.one:after, .two:after, .three:after, .four:after,  .five:after, .six:after, .seven:after, .eight:after, .nine:after, .ten:after {
+.one:after,
+.two:after,
+.three:after,
+.four:after,
+.five:after,
+.six:after,
+.seven:after,
+.eight:after,
+.nine:after,
+.ten:after {
   left: 5px;
   top: 0;
 }
@@ -177,7 +213,6 @@ body {
   left: 100px;
   animation: heart 1.7s ease-out infinite;
 }
-
 /* end animation heart */
 
 @keyframes chocolate-box {
@@ -186,7 +221,7 @@ body {
   }
 
   to {
-    transform: translateX(0) ;
+    transform: translateX(0);
   }
 }
 
@@ -201,7 +236,8 @@ body {
   cursor: pointer;
 }
 
-.chocolate-box:before, .chocolate-box:after {
+.chocolate-box:before,
+.chocolate-box:after {
   content: "";
   position: absolute;
 }
@@ -235,7 +271,8 @@ body {
   left: 90px;
 }
 
-.top-left, .bottom-right {
+.top-left,
+.bottom-right {
   position: absolute;
   border-radius: 50%;
   width: 30px;
@@ -251,12 +288,16 @@ body {
   top: 162px;
 }
 
-.top-left:before, .bottom-right:before, .top-left:after, .bottom-right:after {
+.top-left:before,
+.bottom-right:before,
+.top-left:after,
+.bottom-right:after {
   position: absolute;
   content: "";
 }
 
-.top-left:before, .bottom-right:before {
+.top-left:before,
+.bottom-right:before {
   width: 30px;
   height: 30px;
   background-color: #d12511;
@@ -281,7 +322,8 @@ body {
   opacity: 0;
 }
 
-.top-left:after, .bottom-right:after {
+.top-left:after,
+.bottom-right:after {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .3);
   width: 10px;
@@ -303,7 +345,8 @@ body {
   transform: .2s;
 }
 
-.top-right:before, .top-right:after {
+.top-right:before,
+.top-right:after {
   content: "";
   position: absolute;
   background-color: #93522b;
@@ -345,7 +388,8 @@ body {
   transition: .2s;
 }
 
-.bottom-left:before, .bottom-left:after {
+.bottom-left:before,
+.bottom-left:after {
   content: "";
   position: absolute;
   background-color: #fde7c7;
@@ -414,10 +458,7 @@ body {
   content: "For You";
   color: #ffead2;
   font-family: "Brush Script MT", cursive;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 17px 25px;
   font-size: 35px;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -437,7 +478,10 @@ body {
   box-shadow: -5px 165px #ffead2;
 }
 
-#white, #milk, #truffle, #truffle_2 {
+#white,
+#milk,
+#truffle,
+#truffle_2 {
   position: absolute;
   width: 100%;
   color: #ffead2;
@@ -464,5 +508,5 @@ body {
 
 #truffle_2 {
   left: -80px;
-  top: 100px; 
+  top: 100px;
 }
