@@ -7,37 +7,32 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-
 .container {
   display: inline-block;
 }
-
 .text {
   font-size: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   border-right: 5px solid;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(18), cursor .4s step-end infinite alternate;
   color: #fff;
-  font-family: 'poppins', sans-serif;
+  font-family: monospace, sans-serif;
 }
-
 /* cursor blinking */
 @keyframes cursor {
   50% {
-    border-color: transparent;
-  }
+      border-color: transparent;
+ }
 }
-
 /* typing effect */
 @keyframes typing {
   from {
-    width: 0;
-  }
+      width: 0;
+ }
 }
-
 /* animation heart */
 .heart {
   background-color: #d62828;
@@ -50,9 +45,7 @@ body {
   transform: rotate(-45deg);
   width: 30px;
 }
-
-.heart:before,
-.heart:after {
+.heart:before, .heart:after {
   content: "";
   background-color: #d62828;
   border-radius: 50%;
@@ -60,44 +53,29 @@ body {
   position: absolute;
   width: 30px;
 }
-
 .heart:before {
   top: -15px;
   left: 0;
 }
-
 .heart:after {
   left: 15px;
   top: 0;
 }
-
 .hearts {
   position: absolute;
   top: 15px;
 }
-
 @keyframes heart {
   0% {
-    transform: translateY(0) rotate(-60deg) scale(0.8);
-    opacity: 1;
-  }
-
+      transform: translateY(0) rotate(-60deg) scale(0.8);
+      opacity: 1;
+ }
   100% {
-    transform: translateY(-700px) rotate(-60deg) scale(1.8);
-    opacity: 0.5;
-  }
+      transform: translateY(-700px) rotate(-60deg) scale(1.8);
+      opacity: 0.5;
+ }
 }
-
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.ten {
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
   background-color: red;
   display: inline-block;
   height: 10px;
@@ -107,27 +85,7 @@ body {
   transform: rotate(-45deg);
   top: 50px;
 }
-
-.one:before,
-.one:after,
-.two:before,
-.two:after,
-.three:before,
-.three:after,
-.four:before,
-.four:after,
-.five:before,
-.five:after,
-.six:before,
-.six:after,
-.seven:before,
-.seven:after,
-.eight:before,
-.eight:after,
-.nine:before,
-.nine:after,
-.ten:before,
-.ten:after {
+.one:before, .one:after, .two:before, .two:after, .three:before, .three:after, .four:before, .four:after, .five:before, .five:after, .six:before, .six:after, .seven:before, .seven:after, .eight:before, .eight:after, .nine:before, .nine:after, .ten:before, .ten:after {
   content: "";
   background-color: red;
   border-radius: 50%;
@@ -135,113 +93,76 @@ body {
   height: 10px;
   position: absolute;
 }
-
-.one:before,
-.two:before,
-.three:before,
-.four:before,
-.five:before,
-.six:before,
-.seven:before,
-.eight:before,
-.nine:before,
-.ten:before {
+.one:before, .two:before, .three:before, .four:before, .five:before, .six:before, .seven:before, .eight:before, .nine:before, .ten:before {
   top: -5px;
   left: 0;
 }
-
-.one:after,
-.two:after,
-.three:after,
-.four:after,
-.five:after,
-.six:after,
-.seven:after,
-.eight:after,
-.nine:after,
-.ten:after {
+.one:after, .two:after, .three:after, .four:after, .five:after, .six:after, .seven:after, .eight:after, .nine:after, .ten:after {
   left: 5px;
   top: 0;
 }
-
 .one {
   left: 10px;
   animation: heart 1s ease-out infinite;
 }
-
 .two {
   left: 20px;
   animation: heart 2s ease-out infinite;
 }
-
 .three {
   left: 30px;
   animation: heart 1.5s ease-out infinite;
 }
-
 .four {
   left: 40px;
   animation: heart 2.3s ease-out infinite;
 }
-
 .five {
   left: 50px;
   animation: heart 1.7s ease-out infinite;
 }
-
 .six {
   left: 60px;
   animation: heart 1s ease-out infinite;
 }
-
 .seven {
   left: 70px;
   animation: heart 2s ease-out infinite;
 }
-
 .eight {
   left: 80px;
   animation: heart 1.5s ease-out infinite;
 }
-
 .nine {
   left: 90px;
   animation: heart 2.3s ease-out infinite;
 }
-
 .ten {
   left: 100px;
   animation: heart 1.7s ease-out infinite;
 }
 /* end animation heart */
-
 @keyframes chocolate-box {
   from {
-    transform: translateX(-700px);
-  }
-
+      transform: translateX(-700px);
+ }
   to {
-    transform: translateX(0);
-  }
+      transform: translateX(0);
+ }
 }
-
 .chocolate-box {
   animation: chocolate-box 2s ease-in;
 }
-
 .chocolate-box {
   position: relative;
   height: 300px;
   width: 300px;
   cursor: pointer;
 }
-
-.chocolate-box:before,
-.chocolate-box:after {
+.chocolate-box:before, .chocolate-box:after {
   content: "";
   position: absolute;
 }
-
 .chocolate-box:before {
   width: 160px;
   height: 160px;
@@ -251,7 +172,6 @@ body {
   top: 50%;
   box-shadow: 10px 10px #392312;
 }
-
 .chocolate-box:after {
   width: 68px;
   height: 68px;
@@ -260,19 +180,15 @@ body {
   left: 80px;
   box-shadow: 70px 0 #2b0900, 70px 70px #2b0900, 0 70px #2b0900;
 }
-
 .chocs {
   position: absolute;
   z-index: 1;
 }
-
 .top-left {
   top: 92px;
   left: 90px;
 }
-
-.top-left,
-.bottom-right {
+.top-left, .bottom-right {
   position: absolute;
   border-radius: 50%;
   width: 30px;
@@ -282,22 +198,15 @@ body {
   filter: drop-shadow(2px 2px #ab1503) drop-shadow(-2px 2px #ab1503);
   transition: .2s;
 }
-
 .bottom-right {
   left: 162px;
   top: 162px;
 }
-
-.top-left:before,
-.bottom-right:before,
-.top-left:after,
-.bottom-right:after {
+.top-left:before, .bottom-right:before, .top-left:after, .bottom-right:after {
   position: absolute;
   content: "";
 }
-
-.top-left:before,
-.bottom-right:before {
+.top-left:before, .bottom-right:before {
   width: 30px;
   height: 30px;
   background-color: #d12511;
@@ -305,25 +214,19 @@ body {
   top: 10px;
   left: 10px;
 }
-
 .bottom-right:hover {
   transform: rotate(25deg);
 }
-
 .top-left:hover {
   transform: rotate(25deg);
 }
-
 .bottom-right:active {
   opacity: 0;
 }
-
 .top-left:active {
   opacity: 0;
 }
-
-.top-left:after,
-.bottom-right:after {
+.top-left:after, .bottom-right:after {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .3);
   width: 10px;
@@ -331,7 +234,6 @@ body {
   top: 5px;
   left: 35px;
 }
-
 .top-right {
   position: absolute;
   border-radius: 50%;
@@ -344,9 +246,7 @@ body {
   overflow: hidden;
   transform: .2s;
 }
-
-.top-right:before,
-.top-right:after {
+.top-right:before, .top-right:after {
   content: "";
   position: absolute;
   background-color: #93522b;
@@ -354,27 +254,22 @@ body {
   height: 3px;
   left: -5px;
 }
-
 .top-right:before {
   top: 15px;
   transform: rotate(-35deg);
   box-shadow: 0 -15px #93522b;
 }
-
 .top-right:after {
   top: 0;
   transform: rotate(-15deg);
   box-shadow: 0 17px #93522b, 0 30px #93522b;
 }
-
 .top-right:hover {
   transform: rotate(25deg);
 }
-
 .top-right:active {
   opacity: 0;
 }
-
 .bottom-left {
   position: absolute;
   border-radius: 50%;
@@ -387,9 +282,7 @@ body {
   overflow: hidden;
   transition: .2s;
 }
-
-.bottom-left:before,
-.bottom-left:after {
+.bottom-left:before, .bottom-left:after {
   content: "";
   position: absolute;
   background-color: #fde7c7;
@@ -397,27 +290,22 @@ body {
   height: 3px;
   left: -5px;
 }
-
 .bottom-left:hover {
   transform: rotate(25deg);
 }
-
 .bottom-left:active {
   opacity: 0;
 }
-
 .bottom-left:before {
   top: 15px;
   transform: rotate(-35deg);
   box-shadow: 0 -15px #fde7c7;
 }
-
 .bottom-left:after {
   top: 0;
   transform: rotate(-15deg);
   box-shadow: 0 17px #f5b8b5, 0 30px #f5b8b5;
 }
-
 .box-bottom {
   position: absolute;
   background-color: #392312;
@@ -429,7 +317,6 @@ body {
   z-index: -1;
   box-shadow: 0 211px #392312;
 }
-
 .cover {
   position: absolute;
   background-color: #cf2611;
@@ -443,16 +330,13 @@ body {
   transition: .2s;
   overflow: hidden;
 }
-
 .chocolate-box:hover .cover {
   transform: rotateX(170deg);
   box-shadow: 5px -5px 20px rgba(0, 0, 0, .5);
 }
-
 .chocolate-box:hover .cover:before {
   display: none;
 }
-
 .cover:before {
   position: absolute;
   content: "For You";
@@ -466,7 +350,6 @@ body {
   left: 50%;
   border: 2px double;
 }
-
 .cover:after {
   position: absolute;
   content: "";
@@ -477,11 +360,7 @@ body {
   left: -20px;
   box-shadow: -5px 165px #ffead2;
 }
-
-#white,
-#milk,
-#truffle,
-#truffle_2 {
+#white, #milk, #truffle, #truffle_2 {
   position: absolute;
   width: 100%;
   color: #ffead2;
@@ -490,22 +369,18 @@ body {
   transition: .1s;
   display: none;
 }
-
 #milk {
   top: 170px;
   left: -70px;
 }
-
 #white {
   top: 100px;
   left: 250px;
 }
-
 #truffle {
   left: 250px;
   top: 170px;
 }
-
 #truffle_2 {
   left: -80px;
   top: 100px;

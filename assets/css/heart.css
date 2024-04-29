@@ -11,8 +11,6 @@
 }
 
 body {
-  background: url(/assets/images/background_25.jpg);
-  background-size: cover;
   height: 100vh;
   display: grid;
   justify-content: center;

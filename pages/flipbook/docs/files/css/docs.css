@@ -1,191 +1,149 @@
 /* Docs sample */
-
 body{
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	/* background-color: #f5b8b5; */
-	/* background: url(/assets/images/background_25.jpg); */
 	background-image: linear-gradient(to top right, #885cf6, #ec4899);
 }
-
 /* custom button */
-
 #back-button {
-  background: linear-gradient(135deg, #f34079 40%, #fc894d);
-  border: 2px solid rgba(255, 255, 255);
-  color: #fff;
-  font-weight: 500;
-  width: 150px;
-  border: 0;
-  padding: 10px;
-  margin: 20px auto 0;
-  border-radius: 4px;
-  cursor: pointer;
+	background: linear-gradient(135deg, #f34079 40%, #fc894d);
+	border: 2px solid rgba(255, 255, 255);
+	color: #fff;
+	font-weight: 500;
+	width: 150px;
+	border: 0;
+	padding: 10px;
+	margin: 20px auto 0;
+	border-radius: 4px;
+	cursor: pointer;
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 	margin-left: 730px;
 	-webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
-
-#back-button:hover,
-#back-button:focus,
-#back-button:active {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+#back-button:hover, #back-button:focus, #back-button:active {
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
-
 /* end custom button */
-
 /* add background heart */
-
 .heart {
-  background-color: #d62828;
-  display: inline-block;
-  height: 30px;
-  margin: 0 10px;
-  position: relative;
-  top: 110px;
-  left: 105px;
-  transform: rotate(-45deg);
-  width: 30px;
+	background-color: #d62828;
+	display: inline-block;
+	height: 30px;
+	margin: 0 10px;
+	position: relative;
+	top: 110px;
+	left: 105px;
+	transform: rotate(-45deg);
+	width: 30px;
 }
-
 .heart:before, .heart:after {
-  content: "";
-  background-color: #d62828;
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
+	content: "";
+	background-color: #d62828;
+	border-radius: 50%;
+	height: 30px;
+	position: absolute;
+	width: 30px;
 }
-
 .heart:before {
-  top: -15px;
-  left: 0;
+	top: -15px;
+	left: 0;
 }
-
 .heart:after {
-  left: 15px;
-  top: 0;
+	left: 15px;
+	top: 0;
 }
-
 .hearts {
-  position: absolute;
-  top: 15px;
+	position: absolute;
+	top: 15px;
 }
-
 @keyframes heart {
-  0% {
-    transform: translateY(0) rotate(-60deg) scale(0.8);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-700px) rotate(-60deg) scale(1.8);
-    opacity: 0.5;
-  }
+	0% {
+			transform: translateY(0) rotate(-60deg) scale(0.8);
+			opacity: 1;
+ }
+	100% {
+			transform: translateY(-700px) rotate(-60deg) scale(1.8);
+			opacity: 0.5;
+ }
 }
-
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
-  background-color: red;
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  margin: 600px 60px;
-  position: relative;
-  transform: rotate(-45deg);
-  top: 50px;
+	background-color: red;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	margin: 600px 60px;
+	position: relative;
+	transform: rotate(-45deg);
+	top: 50px;
 }
-
-.one:before, .one:after, 
-.two:before, .two:after, 
-.three:before, .three:after, 
-.four:before, .four:after, 
-.five:before, .five:after, 
-.six:before, .six:after, 
-.seven:before, .seven:after, 
-.eight:before, .eight:after, 
-.nine:before, .nine:after, 
-.ten:before, .ten:after {
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-} 
-
+.one:before, .one:after, .two:before, .two:after, .three:before, .three:after, .four:before, .four:after, .five:before, .five:after, .six:before, .six:after, .seven:before, .seven:after, .eight:before, .eight:after, .nine:before, .nine:after, .ten:before, .ten:after {
+	content: "";
+	background-color: red;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+}
 .one:before, .two:before, .three:before, .four:before, .five:before, .six:before, .seven:before, .eight:before, .nine:before, .ten:before {
-  top: -5px;
-  left: 0;
+	top: -5px;
+	left: 0;
 }
-
-.one:after, .two:after, .three:after, .four:after,  .five:after, .six:after, .seven:after, .eight:after, .nine:after, .ten:after {
-  left: 5px;
-  top: 0;
+.one:after, .two:after, .three:after, .four:after, .five:after, .six:after, .seven:after, .eight:after, .nine:after, .ten:after {
+	left: 5px;
+	top: 0;
 }
-
 .one {
-  left: 10px;
-  animation: heart 1s ease-out infinite;
+	left: 10px;
+	animation: heart 1s ease-out infinite;
 }
-
 .two {
-  left: 20px;
-  animation: heart 2s ease-out infinite;
+	left: 20px;
+	animation: heart 2s ease-out infinite;
 }
-
 .three {
-  left: 30px;
-  animation: heart 1.5s ease-out infinite;
+	left: 30px;
+	animation: heart 1.5s ease-out infinite;
 }
-
 .four {
-  left: 40px;
-  animation: heart 2.3s ease-out infinite;
+	left: 40px;
+	animation: heart 2.3s ease-out infinite;
 }
-
 .five {
-  left: 50px;
-  animation: heart 1.7s ease-out infinite;
+	left: 50px;
+	animation: heart 1.7s ease-out infinite;
 }
-
 .six {
-  left: 60px;
-  animation: heart 1s ease-out infinite;
+	left: 60px;
+	animation: heart 1s ease-out infinite;
 }
-
 .seven {
-  left: 70px;
-  animation: heart 2s ease-out infinite;
+	left: 70px;
+	animation: heart 2s ease-out infinite;
 }
-
 .eight {
-  left: 80px;
-  animation: heart 1.5s ease-out infinite;
+	left: 80px;
+	animation: heart 1.5s ease-out infinite;
 }
-
 .nine {
-  left: 90px;
-  animation: heart 2.3s ease-out infinite;
+	left: 90px;
+	animation: heart 2.3s ease-out infinite;
 }
-
 .ten {
-  left: 100px;
-  animation: heart 1.7s ease-out infinite;
+	left: 100px;
+	animation: heart 1.7s ease-out infinite;
 }
-
 /* end background heart */
-
 #canvas{
 	width: 960px;
 	height: 600px;
 	margin: 100px auto;
 }
-
 #book-zoom{
 	-webkit-transition: -webkit-transform 1s;
 	-moz-transition: -moz-transform 1s;
@@ -193,7 +151,6 @@ body{
 	-o-transition: -o-transform 1s;
 	transition: transform 1s;
 }
-
 .animated{
 	-webkit-transition:margin-left 0.2s ease-in-out;
 	-moz-transition:margin-left 0.2s ease-in-out;
@@ -201,33 +158,27 @@ body{
 	-ms-transition:margin-left 0.2s ease-in-out;
 	transition:margin-left 0.2s ease-in-out;
 }
-
 .sample-docs{
 	margin-top:20px;
 	width:942px;
 	height:600px;
 }
-
 .sample-docs .page{
 	width:471px;
 	height:600px;
 	background:white;
-
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
-
 .sample-docs .hard{
 	background-image:url(../pics/covers.jpg);
 }
-
 .sample-docs .p2{
 	background-position:-471px 0;
 }
-
 .sample-docs .p28{
 	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
 	background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
@@ -236,15 +187,12 @@ body{
 	background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
 	background-image:linear-gradient(left, #fff 95%, #dadada 100%);
 }
-
 .sample-docs .p29{
 	background-position:-942px 0;
 }
-
 .sample-docs .p30{
 	background-position:-1413px 0;
 }
-
 .sample-docs .even .gradient{
 	position:absolute;
 	top:0;
@@ -255,7 +203,6 @@ body{
 	background-position:right top;
 	background-repeat: repeat-y;
 }
-
 .sample-docs .odd .gradient{
 	position:absolute;
 	top:0;
@@ -266,15 +213,12 @@ body{
 	background-position:left top;
 	background-repeat: repeat-y;
 }
-
 .sample-docs .page-wrapper{
 	-webkit-perspective:2000px;
 	-moz-perspective: 2000px;
 	-ms-perspective: 2000px;
 	perspective: 2000px;
 }
-
-
 .sample-docs .loader{
 	background-image:url(../pics/loader.gif);
 	width:22px;
@@ -283,20 +227,17 @@ body{
 	top:280px;
 	left:219px;
 }
-
 .sample-docs .shadow{
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
 	-o-transition: -webkit-box-shadow 0.5s;
 	-ms-transition: -ms-box-shadow 0.5s;
-
 	-webkit-box-shadow:0 0 20px #ccc;
 	-moz-box-shadow:0 0 20px #ccc;
 	-o-box-shadow:0 0 20px #ccc;
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
 }
-
 .sample-docs .tabs{
 	width:942px;
 	height:22px;
@@ -304,24 +245,19 @@ body{
 	position:relative;
 	z-index:1;
 }
-
 .sample-docs .tabs > div{
 	width:461px;
 	height:22px;
 	float:left;
 }
-
 .sample-docs .tabs .left{
 	text-align:left;
 	margin-left:10px;
 }
-
-
 .sample-docs .tabs .right{
 	text-align:right;
 	margin-right:10px;
 }
-
 .sample-docs .tabs a{
 	color:black;
 	-webkit-border-image: url(../pics/tab-off.png) 5 20 5 20 repeat stretch;
@@ -333,17 +269,13 @@ body{
 	line-height:12px;
 	text-decoration:none;
 }
-
-.sample-docs .tabs .on,
-.sample-docs .tabs .on:hover{
+.sample-docs .tabs .on, .sample-docs .tabs .on:hover{
 	-webkit-border-image: url(../pics/tab-on.png) 5 20 5 20 repeat stretch;
 	cursor:default;
 }
-
 .sample-docs .tabs a:hover{
 	color:black;
 	text-decoration: none;
 	cursor:pointer;
 	-webkit-border-image: url(../pics/tab-hover.png) 5 20 5 20 repeat stretch;
-
 }
