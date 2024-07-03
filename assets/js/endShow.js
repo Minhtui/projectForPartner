@@ -9,7 +9,7 @@ const wavesurfer = WaveSurfer.create({
   responsive: true,
   height: 90,
   barRadius: 4,
-  loop: true,
+  // loop: true,
 });
 
 wavesurfer.load("/assets/sound/mybaby.mp3");

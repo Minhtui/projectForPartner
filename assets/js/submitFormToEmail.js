@@ -35,7 +35,7 @@ function validateForm() {
     face_id: "Quên điền link Facebook kìa !!!",
     insta_id: "Quên điền link Instagram kìa!!!",
     des_fav: "Quên điền giới thiệu tính cách kìa!!!",
-    lover_name: "Quên điền tên người yêu của bạn rồi kìa!!!",
+    lover_email: "Quên điền tên người yêu của bạn rồi kìa!!!",
     mess_id: "Quên điền lời nhắn của bạn với người yêu rồi kìa!!!",
   };
 
@@ -102,7 +102,7 @@ function sendMail() {
     insta_id: document.getElementById("insta_id").value,
     fav_name: selectedValue,
     des_fav: document.getElementById("des_fav").value,
-    lover_name: document.getElementById("lover_name").value,
+    lover_email: document.getElementById("lover_email").value,
     mess_id: document.getElementById("mess_id").value,
   };
   emailjs
